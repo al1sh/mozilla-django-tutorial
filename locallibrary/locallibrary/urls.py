@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', RedirectView.as_view(url='/catalog/')),
     path('catalog/', include('catalog.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 from django.conf import settings
